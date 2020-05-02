@@ -24,6 +24,6 @@
 <br>
 ###8.以上步骤，基于项目的站点便已经部署完毕。通过https://zxp180.github.io/SNvue/ 便可以访问。
 <br>
-###3、新建new respository
+
 <br>
 ```
