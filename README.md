@@ -3,41 +3,27 @@
 ----
 ##使用方法：
 <br>
-###1、安装npm：https://nodejs.org/en/
+###1、新建new respository；import code:https://github.com/xiaoxiekeke/SNvue.git
 <br>
-#####windows平台直接安装node.js，系统会自动安装npm 包管理工具，项目中的包和依赖都是通过npm 进行管理的
+###2.打开git bash here,复制内容：git clone git://github.com/zxp180/SNvue.git
+<br>c
+###3.cd SNvue;删除.git文件；安装依赖并打包成静态文件：npm install；打包npm run build
 <br>
-###2、安装cnpm：http://npm.taobao.org/
+###4.删除其他文件，保留static，index.html文件
 <br>
-#####由于国内某些“不可描述”的原因，我们在下载国外的一些资源的时候速度缓慢，且常常报错。因此，使用国内的淘宝镜像cnpm来管理我们的依赖。具体安装和用法参考cnpm的官网
+###5.打开git bash here,:git init;建立gh-pages分支：git checkout -b gh-pages；
 <br>
-###3、克隆项目：
+###6.git bash here:git add -A;
+  git commit -m "init the gh-pages branch";git status;
+  git remote add origin https://github.com/zxp180/SNvue.git
+  git push -u origin gh-pages
 <br>
-```
-    git clone https://git.oschina.net/hicks/SNWeChat.git
-```
+###7.远程便多了一个分支：,远程仓库设置,点击“setting”选项卡
 <br>
-###4、安装依赖：<br>
-
-```
-cd SNWeChat 
-```
-    
-```
- cnpm install  
-```
-    <br>
-###5、本地开发调试：
+###8,githubpage模块，并在source列表中选择gh-pages branch，点击“save”按钮：
+<br>
+###8.以上步骤，基于项目的站点便已经部署完毕。通过https://zxp180.github.io/SNvue/ 便可以访问。
+<br>
+###3、新建new respository
 <br>
 ```
- npm run dev  
-```
-###6、在浏览器中输入：localhost:8080  查看运行效果    
-<br>
-###7、前端发布：
-<br>
-```
- npm run build
-```
-<br>
-###8、前端发布完成后，会在/static/目录下多出一个index.js文件，整个项目的资源就被压缩在了一个js文件里了，此时可以在浏览器环境下直接运行index.html文件了！！！
